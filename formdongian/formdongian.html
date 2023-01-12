@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #hope
+        {
+            width: 800px;
+            margin-left:auto;
+            margin-right: auto;
+            background-color: aqua;
+            padding: 14px;
+        }
+        #2form
+        {
+            width: 800px;
+            margin-left:500px;
+            margin-right: 500px;
+            background-color:sandybrown;
+            padding: 14px;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="hope">
+    <form>
+        <h1 style="text-align: center ; background-color: tomato ; color: white" >Sở Thích Của Bạn </h1>
+        <table>
+            <tr>
+                <th>
+                    <label for="name">
+                        <span style="color: blue">Họ Và Tên :</span>
+                    </label>
+                </th>
+                <td><input type="text" name="name" id="name"></td>
+
+            </tr>
+            <tr>
+                <th>
+                    <label for="email">
+                        <span style="color: blue">Email :</span>
+                    </label>
+                </th>
+                <td><input type="email" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <th style="color: blue">Sở Thích</th>
+                <td id="Hobbies">
+                    <input type="checkbox" name="Thể Thao "  id="Thể Thao">
+                    <label for="Thể Thao">
+                        <span style="color: tomato">Thể Thao</span>
+                    </label>
+                    <input type="checkbox" name="Âm Nhạc " id="Âm Nhạc ">
+                    <label for="Âm Nhạc ">
+                        <span style="color: tomato">Âm Nhạc</span>
+                    </label>
+                    <input type="checkbox" name="Đọc Sách " id="Đọc Sách">
+                    <label for="Đọc Sách">
+                        <span style="color: tomato">Đọc Sách</span>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <th></th>
+                <td id="hobbies">
+                    <input type="checkbox" name="Lướt Wed" id="Lướt Wed">
+                    <label for="Lướt Wed">
+                        <span style="color: tomato">Lướt Wed</span>
+                    </label>
+                    <input type="checkbox" name="Chơi Game " id="Chơi Game">
+                    <label for="Chơi Game">
+                        <span style="color: tomato">Chơi Game</span>
+                    </label>
+                    <input type="checkbox" name="Điện Ảnh " id="Điện Ảnh">
+                    <label for="Điện Ảnh">
+                        <span style="color: tomato">Điện Ảnh</span>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <th></th>
+                <td id="hobbies">
+                    <input type="checkbox" name="Du Lịch" id="Du Lịch">
+                    <label for="Du Lịch">
+                        <span style="color: tomato">Du Lịch</span>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <th></th>
+                <td>
+                    <input type="submit" value="Gửi Thông Tin">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+    </div>
+    <div id="2form">
+        <form >
+            <h1 style="background-color:aqua">Đăng kí học viên</h1>
+            <table>
+                <tr>
+                    <th>
+                        <label for="name">
+                            <span style="color: blue">Họ Và Tên </span>
+                        </label>
+                    </th>
+                    <td><input type="text" name="name" id="name"></td>
+
+                </tr>
+                <tr>
+                    <th>
+                        <label for="Date">
+                            <span style="color:blue">Ngày Sinh </span>
+                        </label>
+                    </th>
+                    <td><input type="date" name="DoB" id="Date"></td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="gender">
+                            <span style="color: blue">Giới Tính</span>
+                        </label>
+                    </th>
+                    <td>
+                        <input type="radio" , id="gender">Nam
+                        <input type="radio" id="gender">Nữ
+                    </td>
+                </tr>
+                <tr>
+                    <td style="color: blue">Địa chỉ</td>
+                    <td><textarea name="address" id="address" cols="30" rows="10"></textarea></td>
+                </tr>
+                <tr>
+                    <td style="color: blue" >Lớp</td>
+                    <td>
+                        <select name="ClassSel">
+                            <option value="Select">-Chọn lớp-</option>
+                            <option value="ClassOption1">12a</option>
+                            <option value="ClassOption">12b</option>
+                            <option value="2ClassOption3">12c</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="color: blue">Email</td>
+                    <td><input type="email"></td>
+                </tr>
+                <tr>
+                    <td style="color: blue">Điện thoại</td>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Đăng ký">
+                        <input type="reset" value="Nhập lại">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
