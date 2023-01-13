@@ -4,13 +4,9 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        *{
-            padding: 0;
-            margin: 0;
-        }
         #hope
         {
-            width: 800px;
+            width: 550px;
             margin-left:auto;
             margin-right: auto;
             background-color: aqua;
@@ -23,12 +19,17 @@
             margin-right: 500px;
             background-color:sandybrown;
             padding: 14px;
-
+        }
+        .div2{
+            background-color: white;
+            width: 550px;
+            height: 200px;
         }
     </style>
 </head>
 <body>
     <div id="hope">
+        <div class="div2">
     <form>
         <h1 style="text-align: center ; background-color: tomato ; color: white" >Sở Thích Của Bạn </h1>
         <table>
@@ -51,7 +52,7 @@
             </tr>
             <tr>
                 <th style="color: blue">Sở Thích</th>
-                <td id="Hobbies">
+                <td class="Hobbies">
                     <input type="checkbox" name="Thể Thao "  id="Thể Thao">
                     <label for="Thể Thao">
                         <span style="color: tomato">Thể Thao</span>
@@ -68,7 +69,7 @@
             </tr>
             <tr>
                 <th></th>
-                <td id="hobbies">
+                <td class="hobbies">
                     <input type="checkbox" name="Lướt Wed" id="Lướt Wed">
                     <label for="Lướt Wed">
                         <span style="color: tomato">Lướt Wed</span>
@@ -101,7 +102,13 @@
             </tr>
         </table>
     </form>
+        </div>
     </div>
+
+
+
+
+
     <div id="2form">
         <form >
             <h1 style="background-color:aqua">Đăng kí học viên</h1>
