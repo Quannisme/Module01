@@ -6,41 +6,43 @@
 </head>
 <body>
 <table>
-  <tr>
-    <th>Amount</th>
-    <th style="padding-right: 40px;padding-left: 40px">From Currency</th>
-    <th>To Currency</th>
-  </tr>
-  <tr>
-    <th><input type="text" id="nhập"></th>
-    <th><select id="from">
-      <option >Việt Nam</option>
-<!--      <option >Mỹ</option>-->
-    </select></th>
-    <th>
-      <select id="to">
-        <option value="usd">USD</option>
-<!--        <option value="">VNĐ</option>-->
-      </select>
-    </th>
-    <th style="padding-left: 40px"><button onclick="doi();">convert</button></th>
-  </tr>
-  <tr>
-    <th>Result : </th>
-    <th><p id="result"></p></th>
-  </tr>
-  <script>
-    function doi() {
-      let tien=parseInt(document.getElementById("nhập").value);
-      let fromm = document.getElementById("from").value;
-      let too = document.getElementById("to").value;
-      if (fromm == "Việt Nam" && too == "usd"){
-        let rs=tien*23000;
-        document.getElementById("result").innerText =rs;
-      }
+    <tr>
+        <th>Amount</th>
+        <th style="padding-right: 40px;padding-left: 40px">From Currency</th>
+        <th>To Currency</th>
+    </tr>
+    <tr>
+        <th><input type="text" id="nhập"></th>
+        <th><select id="from">
+            <option>Việt Nam</option>
+            <!--      <option >Mỹ</option>-->
+        </select></th>
+        <th>
+            <select id="to">
+                <option value="usd">USD</option>
+                <!--        <option value="">VNĐ</option>-->
+            </select>
+        </th>
+        <th style="padding-left: 40px">
+            <button onclick="doi();">convert</button>
+        </th>
+    </tr>
+    <tr>
+        <th>Result :</th>
+        <th><p id="result"></p></th>
+    </tr>
+    <script>
+        function doi() {
+            let tien = parseInt(document.getElementById("nhập").value);
+            let fromm = document.getElementById("from").value;
+            let too = document.getElementById("to").value;
+            if (fromm == "Việt Nam" && too == "usd") {
+                let rs = tien * 23000;
+                document.getElementById("result").innerText = rs;
+            }
 
-    }
-  </script>
+        }
+    </script>
 </table>
 </body>
 </html>
