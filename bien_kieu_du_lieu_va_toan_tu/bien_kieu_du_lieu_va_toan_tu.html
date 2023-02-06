@@ -8,33 +8,31 @@
 <h3>Tính điểm trung bình của một sinh viên</h3>
 <table>
     <tr>
-        <label for="ly">
-            <th>Nhập Điểm Môn lý:</th>
-        </label>
-        <th><input type="text" id="ly"></th>
+        <th>Nhập Điểm Môn lý:</th>
+        <th><input type="text" id="physical"></th>
     </tr>
     <tr>
         <th >Nhập điểm Hóa : </th>
-        <th><input type="text" id="hoa"></th>
+        <th><input type="text" id="chemistry"></th>
     </tr>
     <tr>
         <th >Nhập điểm sinh :</th>
-        <th><input type="text" id="sinh"></th>
+        <th><input type="text" id="biology"></th>
     </tr>
     <tr>
-       <th><button onclick="DTB();">Tính</button></th>
+       <th><button onclick="dtbb();">Tính</button></th>
     </tr>
     <tr>
         <th >Điểm Trung Bình :</th>
-        <th><input type="text" id="DTB"></th>
+        <th><input type="text" id="dtb"></th>
     </tr>
 <script>
-    function DTB() {
-        let ly = parseInt(document.getElementById("ly").value);
-        let toan =parseInt(document.getElementById("hoa").value);
-        let sinh =parseInt(document.getElementById("sinh").value);
-        let DTBi = (ly + toan + sinh)/2;
-        document.getElementById("DTB").value = DTBi;
+    function dtbb() {
+        let ly = parseInt(document.getElementById("physical").value);
+        let toan =parseInt(document.getElementById("chemistry").value);
+        let sinh =parseInt(document.getElementById("biology").value);
+        let average = (ly + toan + sinh)/2;
+        document.getElementById("dtb").value = average;
 
     }
 
@@ -47,7 +45,7 @@
         <th><input type="text" id="oC"></th>
     </tr>
     <tr>
-        <th><button onclick="doi();">Đổi</button></th>
+        <th><button onclick="doi()">Đổi</button></th>
     </tr>
     <tr>
         <th>oF :</th>
@@ -56,8 +54,8 @@
     <script>
         function doi(){
             let oC=parseInt(document.getElementById("oC").value);
-            let doii=oC*1.8+32;
-            document.getElementById("oF").value=doii;
+            let change=oC*1.8+32;
+            document.getElementById("oF").value=change;
         }
     </script>
 </table>
@@ -65,18 +63,18 @@
 <table>
     <tr>
         <th>Nhập Bán kính hình tròn :</th>
-        <th><input type="text" id="tròn"></th>
+        <th><input type="text" id="tron"></th>
     </tr>
     <tr>
-        <th><button onclick="tính();">Tính</button></th>
+        <th><button onclick="tinh()">Tính</button></th>
     </tr>
     <tr>
         <th>Diện tích hình tròn : </th>
         <th><input type="text" id="dientich"></th>
     </tr>
     <script>
-        function tính(){
-            let R=parseInt(document.getElementById("tròn").value);
+        function tinh(){
+            let R=parseInt(document.getElementById("tron").value);
             let S=R*R*3.14;
             document.getElementById("dientich").value=S;
         }
@@ -89,17 +87,17 @@
         <th><input type="text" id="bankinh"></th>
     </tr>
     <tr>
-        <th><button onclick="C();">Tính</button></th>
+        <th><button onclick="c()">Tính</button></th>
     </tr>
     <tr>
         <th>Chu vi của hình tròn :</th>
         <th><input type="text" id="chuvi"></th>
     </tr>
     <script>
-        function C(){
-            let R=parseInt(document.getElementById("bankinh").value);
-            let C=3.14*R*2;
-            document.getElementById("chuvi").value=C;
+        function c(){
+            let r=parseInt(document.getElementById("bankinh").value);
+            let c=3.14*R*2;
+            document.getElementById("chuvi").value=c;
         }
     </script>
 </table>
