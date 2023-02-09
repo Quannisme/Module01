@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=prompt('Nhap tien luong moi thang: ');
+    if (a>=20000000){
+        tienThue=(a*20)/100;
+    } else if(a>=15000000) {
+        tienThue=(a*15)/100
+    } else if(a>=10000000) {
+        tienThue=(a*10)/100;
+    } else if(a>=5000000) {
+        tienThue=(a*5)/100;
+    } else {
+        tienThue=(a*0)/100;
+    }
+    alert('số tiền thuế của bạn mỗi tháng là: '+ tienThue);
+</script>
+</body>
+</html>
