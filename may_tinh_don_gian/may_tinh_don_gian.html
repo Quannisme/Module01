@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy tính đơn giản</title>
+</head>
+<body>
+<div>
+  <table>
+    <tr>
+      <th colspan="4"><input type="text" id="display" readonly></th>
+    </tr>
+    <tr>
+      <th><button onclick="number(1)">1</button></th>
+      <th><button onclick="number(2)">2</button></th>
+      <th><button onclick="number(3)">3</button></th>
+      <th><button onclick="number('+')">+</button></th>
+    </tr>
+    <tr>
+      <th><button onclick="number(4)">4</button></th>
+      <th><button onclick="number(5)">5</button></th>
+      <th><button onclick="number(6)">6</button></th>
+      <th><button onclick="number('-')">-</button></th>
+    </tr>
+    <tr>
+      <th><button onclick="number(7)">7</button></th>
+      <th><button onclick="number(8)">8</button></th>
+      <th><button onclick="number(9)">9</button></th>
+      <th><button onclick="number('x')">x</button></th>
+    </tr>
+    <tr>
+      <th><button onclick="number('c')">C</button></th>
+      <th><button onclick="number(0)">0</button></th>
+      <th><button onclick="result()">=</button></th>
+      <th><button onclick="number('/')">/</button></th>
+    </tr>
+  </table>
+</div>
+<script>
+  let phepToan="";
+  function number(a)
+  {
+    phepToan +=a;
+    document.getElementById("display").value = phepToan;
+  }
+  function result(){
+    result = eval(phepToan)
+    document.getElementById("display").value = result;
+  }
+</script>
+</body>
+</html>
