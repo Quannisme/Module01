@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+  let a=0;
+  let b=1;
+  let fibo;
+  for (let i = 0; i < 100; i++) {
+    fibo=a+b;
+    if(fibo%5==0)
+    {
+        document.write(fibo+"<br>");
+    }
+    a=b;
+    b=fibo;
+  }
+</script>
+</html>

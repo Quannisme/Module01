@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    let a=0;
+    let b=1;
+    let fibo;
+    let tong=0
+    for (let i = 0; i < 20; i++) {
+        fibo=a+b;
+        tong=tong+fibo;
+        a=b;
+        b=fibo;
+    }
+    document.write("tong:"+tong+"<br>");
+</script>
+</html>
