@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
 </body>
+<script>
+    let a = +prompt("Bạn muốn nhập bao nhiêu số nguyên :");
+    let arr = [];
+    let temp = 0;
+    for (let i = 0; i < a; i++) {
+        arr[i] = +prompt("Nhập số nguyên thứ " + (i + 1));
+    }
+    for (let i = 0; i < arr.length; i++) {
+        document.write(arr[i] + "<br>");
+    }
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] >= 10) {
+            temp++;
+        }
+    }
+    document.write("Số nguyên tố lớn hơn hoặc bằng 10 trong mảng là :" + temp);
+</script>
 </html>

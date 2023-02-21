@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
 </body>
+<script>
+    let arr = [];
+    let n = +prompt("Nhập số lượng số bạn muốn nhập vào mảng:");
+    for (let i = 0; i < n; i++) {
+        arr[i] = +prompt("Nhập số thứ " + (i + 1));
+    }
+    for (let i = 0; i < arr.length; i++) {
+        document.write(arr[i] + "<br>");
+    }
+    document.write(arr.sort(function (a, b) {
+        return b - a;
+    }));
+</script>
 </html>

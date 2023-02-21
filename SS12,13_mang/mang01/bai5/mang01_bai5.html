@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
 </body>
+<script>
+    let arr = [];
+    let tempt = 0;
+    let n = +prompt("Nhập số lượng số bạn muốn nhập vào mảng:");
+    for (let i = 0; i < n; i++) {
+        arr[i] = +prompt("Nhập số thứ " + (i + 1));
+    }
+    for (let i = 0; i < arr.length; i++) {
+        document.write(arr[i] + "<br>");
+    }
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] < 0) {
+            tempt++;
+        }
+    }
+    document.write("Số nguyên âm có trong mảng:" + tempt);
+</script>
 </html>

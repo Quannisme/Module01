@@ -1,10 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<p>English:</p>
+<input type="text" id="en"><br>
+<button type="submit" onclick="translated()">Translate</button>
+<p>Việt Nam:</p>
+<p id="vn"></p>
 </body>
+<script>
+    let viet=["Xin chào","Tạm Biệt"];
+    let anh=["hello", "goodbye"];
+    // function $(x)
+    // {
+    //     return document.getElementById(x);
+    // }
+    function translated(){
+        let en=document.getElementById("en").value;
+        for (let i = 0; i <anh.length ; i++) {
+            if(en===anh[i])
+            {
+               document.getElementById("vn").innerText=viet[i];
+               break;
+            }else
+            {
+                document.getElementById("vn").innerText="Không tìm thấy";
+            }
+        }
+    }//vấn đề không tìm thấy chữ hello
+</script>
 </html>

@@ -1,10 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
-<body>
-$END$
-</body>
+<body></body>
+<script>
+    // document.write("bai 1 <br>");
+    // console.log("Bài 1");
+    // let mycolors=["Red","Green","White","Black"];
+    // mycolors.join(',');
+    // console.log(mycolors);
+    // document.write(mycolors+"<br>");
+    //
+    //
+    // document.write("bài 2<br>");
+    // let n=+prompt("Nhập số lượng số bạn muốn nhập :");
+    // let mynumbers=[];
+    // for (let i = 0; i <n ; i++) {
+    //   mynumbers[i] =+prompt("Nhập mảng thứ "+i);
+    // }
+    //
+    // let newarr = [];
+    // for (let i = 0; i <mynumbers.length ; i++) {
+    //     if(mynumbers[i+1]%2==0 && mynumbers[i]%2==0)
+    //     {
+    //         newarr.push('-');
+    //         newarr.push(i);
+    //     }else
+    //     {
+    //         newarr.push(mynumbers[i]);
+    //     }
+    //
+    // }
+    // document.write(newarr.join("")+"<br>");
+
+
+    document.write("Bài 3<br>");
+    let arr = 'The Quick Brown Fox';
+    let upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    let lower = 'abcdefghijklmnopqrstuvwxyz';
+    let result = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (upper.indexOf(arr[i]) !== -1) {
+            result.push(arr[i].toLowerCase());
+        } else if (lower.indexOf(arr[i]) !== -1) {
+            result.push(arr[i].toUpperCase());
+        } else {
+            result.push(arr[i]);
+        }
+    }
+    document.write(result.join(''));
+    // console.log(result);
+
+</script>
 </html>

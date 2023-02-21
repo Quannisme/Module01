@@ -1,10 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
 </body>
+<script>
+    let n = +prompt("Bạn muốn nhập bao nhiêu số trong mảng:");
+    let arr = [];
+    let max = arr[0];
+    let tb = 0;
+    let tbc = 0;
+    for (let i = 0; i < n; i++) {
+        arr[i] = +prompt("Nhập số ở phần tử thứ" + (i + 1));
+    }
+    for (let i = 0; i < arr.length; i++) {
+        document.write(arr[i] + "<br>");
+    }
+    for (let i = 0; i < arr.length; i++) {
+        if (max < arr[i]) {
+            max = arr[i];
+        }
+    }
+    document.write("Giá trị lớn nhất trong mảng là:" + max);
+    // for (let i = 0; i < arr.length; i++) {
+    //   tb+=arr[i];
+    //   tbc=tb/n;
+    // }
+    for (const a of arr)// cách hay hơn
+    {
+        tb += a;
+    }
+    tbc = tb / arr.length;
+    document.write("Giá trị trung bình của các giá trị trong mảng là :" + tbc);
+</script>
 </html>

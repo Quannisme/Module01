@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
 </body>
+<script>
+    let n = +prompt("Nhập số lượng mảng bạn muốn nhập:");
+    let arr = [];
+    let tempt = 0;
+    for (let i = 0; i < n; i++) {
+        arr[i] = prompt("Nhập kí tự mảng thứ " + (i + 1));
+    }
+    for (let i = 0; i < arr.length; i++) {
+        document.write(arr[i] + "<br>");
+    }
+    for (let i = 0; i < arr.length; i++) {
+        if (isNaN(arr[i])) {
+            tempt++;
+        }
+    }
+    document.write("<br>");
+    document.write("Độ dài của chuỗi kí tự trong mảng là:" + tempt);
+</script>
 </html>
