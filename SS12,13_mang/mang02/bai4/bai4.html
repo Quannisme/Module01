@@ -2,9 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>$Title$</title>
+  <title></title>
 </head>
 <body>
-$END$
+<script>
+  let arr = prompt("Nhập Vô: ");
+  let k = arr.length;
+  let count = 0 ;
+  let arrArr=[];
+  for (let i = 0; i < k ; i++) {
+    arrArr[i] = arr.slice(i,i+1)
+    if (arrArr[i] === " "){
+      count++;
+    }
+  }
+  document.write(arrArr);
+  document.write("Số từ của câu là: " + (count+1));
+</script>
 </body>
-</html>
+</html>>
