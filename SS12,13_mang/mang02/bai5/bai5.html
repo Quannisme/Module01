@@ -1,10 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
 </body>
+<script>
+  let a=prompt("nhập chuỗi");
+  let b=prompt("Nhập chuỗi :");
+  let flag=true;
+  if(a.length!=b.length)
+  {
+    flag=false;
+    document.write("2 chuỗi khác nhau nhé:");
+  }else
+  {
+    for (let i = 0; i < a.length; i++) {
+      if(a[i]!==b[i])
+      {
+        flag=false;
+        document.write("2 chuỗi này khác nhau :");
+        break;
+      }
+    }
+  }
+  if(flag==true)
+  {
+    document.write("2 chuỗi này giống nhau thế")
+  }
+</script>
 </html>
