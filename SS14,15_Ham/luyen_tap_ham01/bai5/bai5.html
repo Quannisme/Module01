@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<input type="text" oninput="find(this.value)">
+<p id="result"></p>
 </body>
+<script>
+  let star1=["Polaris","Aldebaran","Deneb","Vega","Altair","Dubhe","Regulus"];
+  let constellation=["Ursa","Minor","Tarurus","Cygnus","Lyra","Aquila","Ursa Major","Leo"];
+  function find(a){
+    for (let i = 0; i < star1.length; i++) {
+      if(a==star1[i])
+      {
+        document.getElementById("result").innerText=constellation[i];
+      }
+    }
+  }
+</script>
 </html>

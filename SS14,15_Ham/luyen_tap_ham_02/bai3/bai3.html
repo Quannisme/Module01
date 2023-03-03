@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
 </body>
+<script>
+    function excess(a)
+    {
+       var results=1;
+        for (let i = 1 ; i <=a ; i++) {
+            results *=i;
+        }
+        return results;
+    }
+    let a=+prompt("Nhập số muốn tính dây thừa:");
+    let result=excess(a);
+    alert(result);
+</script>
 </html>

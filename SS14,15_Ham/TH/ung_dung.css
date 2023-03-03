@@ -1,0 +1,14 @@
+#name{
+    width: 400px;
+}
+#fix{
+    width: 100px;
+}
+#inputBox{
+    background-color:#ccc;
+    width: 300px;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 5px solid #8060ff;
+    margin: 100px;
+}

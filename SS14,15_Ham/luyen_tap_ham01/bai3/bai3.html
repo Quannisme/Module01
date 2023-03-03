@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+
 </body>
+<script>
+    function compare(a, b) {
+        let index = 0;
+        if (a > b) {
+            return a;
+        } else if (a <= b) {
+            return a + b;
+        }
+    }
+
+    let a = +prompt("Nhập số a:");
+    let b = +prompt("Nhập số b:");
+    result = compare(a, b);
+    document.write(result);
+</script>
 </html>

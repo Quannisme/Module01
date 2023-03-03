@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
 </body>
+<script>
+  function change(a,b)
+  {
+    let tempt=0;
+    if(a%1==0 && b%1==0)
+    {
+      tempt=a;
+      a=b;
+      b=tempt;
+      document.write(a+"---"+b);
+    }
+  }
+  let a=+prompt("Nhập số a:");
+  let b=+prompt("Nhập số b:");
+  change(a,b);
+</script>
 </html>
