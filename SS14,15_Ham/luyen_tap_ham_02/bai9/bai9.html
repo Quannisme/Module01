@@ -7,25 +7,23 @@
 <body>
 </body>
 <script>
-  function check(a){
-    let arr=["one","two","tree"];
-    let count=0;
+    function check(a) {
+        let arr = ["one", "two", "tree"];
+        let count = 0;
 
 
-
-    for (let i = 0; i < arr.length; i++) {
-      if(a==arr[i])
-      {
-        count++;
-        return count;
-      }else
-      {
-        return -1;
-      }
+        for (let i = 0; i < arr.length; i++) {
+            if (a == arr[i]) {
+                count++;
+                return count;
+            } else {
+                return -1;
+            }
+        }
     }
-  }
-  let a=prompt("Nhập :");
-  result=check(a);
-  alert(result);
+
+    let a = prompt("Nhập :");
+    result = check(a);
+    alert(result);
 </script>
 </html>
