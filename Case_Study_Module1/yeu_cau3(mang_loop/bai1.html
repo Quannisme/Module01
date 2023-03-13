@@ -1,10 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
 </body>
+<script>
+  let arr=[];
+  let tong=0;
+  let a=+prompt("Bạn muốn nhập bao nhiêu số :");
+  for (let i = 0; i < a; i++) {
+    arr[i]=+prompt("Nhập số trong mảng:");
+  }
+  for (let i = 0; i < arr.length; i++) {
+        if(i==0)
+        {
+            document.write(arr[0]+"<br>");
+            console.log(arr[0]);
+        }
+        tong=arr[i]+arr[i+1];
+        document.write(tong+"<br>");
+        console.log(tong);
+      if(i+1==arr.length-1)
+      {
+
+        break;
+      }
+    }
+</script>
 </html>
