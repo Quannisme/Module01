@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="bookTable">
+
+</div>
+<script>
+  class Book{
+    constructor(bookName, author, quantity, publisher) {
+      this.bookName = bookName;
+      this.author = author;
+      this.quality = quantity;
+      this.publisher = publisher;
+    }
+  }
+  let book1 = new Book("dich hach", "alber camus",  20 ,"nhi dong");
+  let book2 = new Book("dich hep", "alber camus",  20 ,"nhi dong");
+  let book3 = new Book("dich hack", "alber camus",  20 ,"nhi dong");
+  let bookList = [book1,book2,book3];
+  displayList(bookList);
+
+  // CRUD:
+  // Create
+  // Read
+  // Update
+  // Delete
+  // Sort, Find
+  function displayList(list) {
+    let table = "<table >" +
+            "<tr>" +
+            "<th>STT</th>" +
+            "<th>Ten sach</th>" +
+            "<th>Tac gia</th>" +
+            "<th>So luong</th>" +
+            "<th>NXB</th>" +
+            "</tr>"
+
+    for (let i = 0; i < bookList.length; i++) {
+      table += "<tr>" +
+              "<td>" + (i+1) +"</td>" +
+              "<td>" + (bookList[i].bookName) +"</td>" +
+              "<td>" + (bookList[i].author) +"</td>" +
+              "<td>" + (bookList[i].quality) +"</td>" +
+              "<td>" + (bookList[i].publisher) +"</td>" +
+               "<td>" + '<button onclick="deleteBook(' + i +')"> Xoa</button>' +"</td>" +
+              "</tr>"
+    }
+    table += "</table>";
+    alert(typeof table);
+    alert(table)
+    document.getElementById("bookTable").innerHTML = table;
+  }
+  function deleteBook(id) {
+    alert("xoa sachn" + bookList[id].bookName)
+    bookList.splice(id,1);
+    displayList(bookList);
+  }
+</script>
+</body>
+</html>

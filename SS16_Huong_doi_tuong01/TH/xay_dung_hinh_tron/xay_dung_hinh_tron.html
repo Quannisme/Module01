@@ -1,10 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
 </body>
+<script>
+  let circle=function ( Color,Radius)
+  {
+    this.color='color';
+    this.radius=Radius;
+    this.getRadius=function ()
+    {
+        return this.radius;
+    }
+    this.getArea=function ()
+    {
+        return Math.pow(this.radius,2)*Math.PI;
+    }
+
+  };
+  let ci= new circle( 'vàng',2)
+  let ar=ci.getArea();
+  document.write(ar);
+  console.log(ci);
+  console.log(ar);
+</script>
 </html>

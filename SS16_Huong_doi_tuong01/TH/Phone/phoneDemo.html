@@ -1,10 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+  function Phone (pin,inbox, outbox){
+    this.pin = pin;
+    this.inbox = inbox;
+    this.outbox = outbox;
+
+    this.nhanThu = function (noiDung){
+        this.inbox[this.inbox.length] = noiDung;
+    }
+    this.guiThu = function (noiDung,doiTuongNhan){
+      this.outbox.push(noiDung)
+      doiTuongNhan.nhanThu(noiDung);
+    }
+
+    this.getInbox = function (){
+        for (let i =0; i< this.inbox.length ; i++){
+            console.log(i + ":" +this.inbox[i]);
+        }
+    }
+  }
+
+  let phone1 = new Phone("100",[],[]);
+  let phone2 = new Phone("100",[],[]);
+  phone1.guiThu("abc",phone2);
+  phone1.guiThu("ddd",phone2);
+  phone2.getInbox();
+</script>
 </body>
 </html>

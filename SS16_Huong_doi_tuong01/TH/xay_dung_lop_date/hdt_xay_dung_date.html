@@ -1,10 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+
 </body>
+<script>
+    let Mydate = function (day, month, year) {
+        this.day = day;
+        this.month = month;
+        this.year = year;
+        this.getDay = function () {
+            return this.day;
+        }
+        this.getMonth=function ()
+        {
+            return this.month;
+        }
+        this.getYearr=function ()
+        {
+            return this.year;
+        }
+        this.setDay=function (Day)
+        {
+            this.day=Day;
+        }
+        this.setMonth=function (Month) {
+            this.month=Month;
+        }
+        this.setYearr=function (Yearr)
+        {
+            this.year=Yearr;
+        }
+        this.setDate=function (Day,Month,Yearr)
+        {
+            this.day=Day;
+            this.month=Month;
+            this.year=Yearr;
+        }
+        toString()
+        {
+            return this.day+'/'+this.month+'/'+this.year;
+        }
+    };
+    let date= new Mydate(2,2,2007);
+    let day
+</script>
 </html>
